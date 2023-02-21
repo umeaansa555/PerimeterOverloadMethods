@@ -21,8 +21,7 @@ namespace OverloadMethods
 
         private void areaButton_Click(object sender, EventArgs e)
         {
-            //double num1, num2, answer;
-            // declare variables at the top for clarity/legibility
+           
             double num1, num2, num3, answer;
 
             if (value2Input.Text == "" && value3Input.Text == "")
@@ -55,19 +54,11 @@ namespace OverloadMethods
 
         public double Perimeter(double diameter)
         {
-            // double area = 3.14 * radius * radius;
-            // OR the shorter way: using the Math class of built in calculation stuff
-
-            //double area = Math.PI * Math.Pow(radius, 2);
-            //return area;
             double p = 3.14 * diameter;
             return p;
-
         }
         public double Perimeter(double length, double width)
         {
-            //double area = length * width;
-            //return area;
             double p = (2 * length) * (2 * width);
             return p;
 
