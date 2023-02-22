@@ -24,7 +24,11 @@ namespace OverloadMethods
            
             double num1, num2, num3, answer;
 
-            if (value2Input.Text == "" && value3Input.Text == "")
+            if (value1Input.Text == "" && value2Input.Text == "" && value3Input.Text == "")
+            {
+                areaOutput.Text = "Please enter at least 1 value";
+            }
+            else if (value2Input.Text == "" && value3Input.Text == "")
             {
                 num1 = Convert.ToDouble(value1Input.Text);
                 answer = Perimeter(num1);
@@ -37,10 +41,6 @@ namespace OverloadMethods
                 num2 = Convert.ToDouble(value2Input.Text);
                 answer = Perimeter(num1, num2);
                 areaOutput.Text = $"The perimeter of the rectangle is {answer}";
-            }
-            else if (value1Input.Text == "" && value2Input.Text == "" && value3Input.Text == "")
-            {
-                areaOutput.Text = "Please enter at least 1 value";
             }
             else
             {
